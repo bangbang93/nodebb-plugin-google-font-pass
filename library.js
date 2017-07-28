@@ -12,7 +12,7 @@ var winston = module.parent.require('winston'),
 			if(exists){
 				fs.readFile(path,'utf8', function (err, data) {
 					if (err) throw err;
-					data = data.replace('fonts.googleapis.com/css?family=Raleway:100,300,700,900,500','fonts.useso.com/css?family=Open+Sans:300,400,600')
+					data = data.replace('fonts.googleapis.com/css?family=Raleway:100,300,700,900,500','libs.bangbang93.com/css?family=Open+Sans:300,400,600')
 					fs.writeFile(path,data,'utf8',function(err){
 						if (err) throw err;
 						callback();
